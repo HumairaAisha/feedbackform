@@ -4,13 +4,14 @@ const userText = document.getElementById('displayText')
 
 textarea.addEventListener('input', updateText);
 function updateText(event) {
-   userText.textContent = event.target.value.trim();
+   userText.textContent = event.target.value ;
    
 }
 
 form.addEventListener('submit', function (event) {
    event.preventDefault();
-   let userInput = textarea.value.trim()
+   //console.log("Form Submitted")
+   let userInput = textarea.value
    if (userInput === '') {
       alert("Please share your Feedback");
    } else {
