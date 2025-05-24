@@ -17,5 +17,6 @@ form.addEventListener('submit', function (event) {
       alert("Thank You \nHere is a copy of Your Feedback Response: " + userText.textContent)
       textarea.value = '';
       userText.textContent = '';
+      
    }
 })
